@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
+import "./Donate.css";
 
 type CalculatorForm = {
   lotLama: string;
@@ -359,6 +360,18 @@ export default function App() {
         <p className="note-biaya">
           Pajak jual default: {PAJAK_JUAL_SAHAM}% • Fee broker bisa diubah.
         </p>
+
+        {/* DONATE */}
+        <a
+          href="https://saweria.co/teguhrizki"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="donate-button"
+          aria-label="Traktir saya kopi melalui Saweria"
+        >
+          <span>☕</span>
+          <span>Traktir Kopi & Request Fitur</span>
+        </a>
       </section>
     </main>
   );
